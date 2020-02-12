@@ -1,6 +1,6 @@
 # Weather Forecast App
 ```
-Average Weather Forecast App for Current &amp; Next 5 days 
+Average Weather Forecast App for Current and Next 5 days 
 ```
 # Web Api's
 ```
