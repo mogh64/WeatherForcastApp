@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Json\de.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Json\de.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LazyCache" Version="2.0.4" />
+    <PackageReference Include="LazyCache.AspNetCore" Version="2.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="3.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WeatherForcastApp.Services\WeatherForcastApp.Services.csproj" />
+  </ItemGroup>
+
+
+</Project>
