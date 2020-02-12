@@ -1,4 +1,4 @@
-# WeatherForcastApp
+# Weather Forecast App
 ```
 Average Weather Forecast App for Current &amp; Next 5 days 
 ```
@@ -6,4 +6,9 @@ Average Weather Forecast App for Current &amp; Next 5 days
 ```
 https://localhost:44322/api/weather/forcast?city={cityName}
 https://localhost:44322/api/weather/forcast?zipCode={zipCode}
+```
+#Prerequisite
+```
+Visual Studio 2019
+.Net Core 3.1
 ```
