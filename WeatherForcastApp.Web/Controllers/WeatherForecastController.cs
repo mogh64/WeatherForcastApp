@@ -28,7 +28,7 @@ namespace WeatherForcastApp.Web.Controllers
         {
             requestDto.Validate();
             Func<Task<WeatherForcastResponseDto>> weatherForecastCache = () =>  _weatherForcastService.Get(requestDto);
-            return _cache.GetOrAddAsync<WeatherForcastResponseDto>(requestDto.GetRequestValue().value, weatherForecastCache, DateTimeOffset.Now.AddMinutes(1));
+            return _cache.GetOrAddAsync<WeatherForcastResponseDto>(requestDto.GetRequestValue().value, weatherForecastCache, DateTimeOffset.Now.AddHours(1));
         }          
     }
 }
